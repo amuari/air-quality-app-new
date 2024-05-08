@@ -4,7 +4,7 @@ const getAirQuality = async (city) => {
     const response = await fetch(
       `https://api.waqi.info/feed/${city}/?token=${REACT_APP_AQI_AOI_TOKEN}`
     )
-    const data = response.json()
+    const data = await response.json()
     console.log(data)
   } catch (error) {
     console.log(error)
