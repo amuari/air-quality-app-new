@@ -11,7 +11,7 @@ const getAirQuality = async (city) => {
   }
 }
 function App() {
-  return <main></main>
+  return <main>hello world</main>
 }
 
 export default App
