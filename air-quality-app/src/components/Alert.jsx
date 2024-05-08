@@ -1,6 +1,6 @@
 const Alert = ({ error }) => {
   return (
-    <div className='flex mx-72 my-20 w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800'>
+    <div className='flex  md:max-w-sm md:mx-52 lg:mx-80 xl:mx-96  my-20 w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800'>
       <div className='flex items-center justify-center w-12 bg-red-500'>
         <svg
           className='w-6 h-6 text-white fill-current'

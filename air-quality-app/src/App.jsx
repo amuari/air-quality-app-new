@@ -2,6 +2,7 @@ import './App.css'
 import { useState } from 'react'
 import CitySearch from './components/CitySearch'
 import Alert from './components/Alert'
+import AirQualityCard from './components/AirQualityCard'
 
 function App() {
   const [error, setError] = useState(null)
@@ -37,8 +38,8 @@ function App() {
       {error ? <Alert error={error} /> : ''}
       {airQualityData && (
         // Air Quality Card Component
+        <AirQualityCard data={airQualityData} />
         // Pollutant Info
-        <div></div>
       )}
     </main>
   )

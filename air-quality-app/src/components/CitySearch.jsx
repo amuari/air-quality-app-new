@@ -13,13 +13,13 @@ const CitySearch = ({ getAirQuality }) => {
   }
   return (
     <div>
-      <form action=''>
+      <form action='' className='mb-4'>
         <input
           type='search'
-          placeholder='Enter city'
+          placeholder='Enter City...'
           value={inputValue}
           onChange={handleInputChange}
-          className='px-4 py-2 text-gray-700 bg-white border rounded-md sm:mx-2 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40'
+          className='px-4 py-2 text-blue-600 bg-white border rounded-md sm:mx-2 dark:bg-gray-300  dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40'
         ></input>
         <button
           type='submit'
