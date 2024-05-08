@@ -1,6 +1,7 @@
 import './App.css'
 import { useState } from 'react'
 import CitySearch from './components/CitySearch'
+import Alert from './components/Alert'
 
 function App() {
   const [error, setError] = useState(null)
@@ -28,11 +29,17 @@ function App() {
     }
   }
   return (
-    <main>
-      <h1 className='text-3xl font-semibold text-gray-800  lg:text-4xl'>
+    <main className='container'>
+      <h1 className='mt-5 mb-3 text-3xl font-semibold text-gray-800  lg:text-4xl'>
         Air Quality Index Checker
       </h1>
       <CitySearch getAirQuality={getAirQuality} />
+      {error ? <Alert error={error} /> : ''}
+      {airQualityData && (
+        // Air Quality Card Component
+        // Pollutant Info
+        <div></div>
+      )}
     </main>
   )
 }
