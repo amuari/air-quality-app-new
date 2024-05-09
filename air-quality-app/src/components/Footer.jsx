@@ -1,4 +1,4 @@
-import { IconBrandGithub, IconBrandTwitter } from '@tabler/icons-react'
+import { IconBrandTwitter } from '@tabler/icons-react'
 
 const Footer = () => {
   return (
