@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const Alert = ({ error }) => {
   return (
     <div className='flex  md:max-w-sm md:mx-52 lg:mx-80 xl:mx-96  my-20 w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800'>
