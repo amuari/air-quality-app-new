@@ -5,6 +5,7 @@ import Alert from './components/Alert'
 import AirQualityCard from './components/AirQualityCard'
 import PollutantInfo from './components/PollutantInfo'
 import AirQualityLevelsTable from './components/AirQualityLevelsTable'
+import Footer from './components/Footer'
 
 function App() {
   const [error, setError] = useState(null)
@@ -45,13 +46,20 @@ function App() {
         <PollutantInfo pollutant={airQualityData.dominentpol} />
       )}
       <AirQualityLevelsTable />
-      <p>
+
+      <p className='mb-4'>
         Location-specific API data sourced from the World Air Quality Index
         Project.{' '}
         <a className='text-purple-600' href='https://aqicn.org/api/'>
           LINK
         </a>
       </p>
+      <a href='https://www.buymeacoffee.com/amuaridev'>
+        <button className='px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80'>
+          Support Me
+        </button>
+      </a>
+      <Footer />
     </main>
   )
 }
